@@ -1,14 +1,4 @@
-import React, { useState } from 'react';
-import Form from './components/Form/Form';
-import RecommendationList from './components/RecommendationList/RecommendationList';
-
 function App() {
-  const [recommendations, setRecommendations] = useState([]);
-
-  /**
-   * Dadas atualizações no formulário, necessário atualizar a lista de recomendações
-   */
-
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col justify-center items-center">
       <h1 className="text-3xl font-bold mb-8">
@@ -26,12 +16,6 @@ function App() {
             receba recomendações personalizadas de produtos que melhor atendam
             às suas necessidades.
           </p>
-        </div>
-        <div>
-          <Form />
-        </div>
-        <div>
-          <RecommendationList recommendations={recommendations} />
         </div>
       </div>
     </div>
