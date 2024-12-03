@@ -1,15 +1,10 @@
-// src/services/product.service.ts
-
-import { Product } from "@/@types";
 import axios, { AxiosResponse } from "axios";
-
-const baseURL: string = "http://localhost:3001";
+import { Product } from "../@types";
+import { api } from "../configurations/api";
 
 const getProducts = async (): Promise<Product[]> => {
   try {
-    const response: AxiosResponse<Product[]> = await axios.get(
-      `${baseURL}/products`
-    );
+    const response: AxiosResponse<Product[]> = await api().get(`/products`);
     return response.data;
   } catch (error: unknown) {
     if (axios.isAxiosError(error)) {
