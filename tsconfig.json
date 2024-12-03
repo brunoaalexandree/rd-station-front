@@ -17,9 +17,9 @@
     "jsx": "react-jsx",
     "noImplicitAny": false,
     "useUnknownInCatchVariables": false,
-    "baseUrl": "src",
+    "baseUrl": "./src",  
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["*"] 
     }
   },
   "include": ["src", "**/*.d.ts"]

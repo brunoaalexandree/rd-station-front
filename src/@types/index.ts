@@ -7,8 +7,12 @@ export interface Product {
 }
 
 export interface FormData {
-  selectedPreferences: string[];
-  selectedFeatures: string[];
+  fullName: string;
+  email: string;
+  profession: string;
+  preferences: string[];
+  features: string[];
+  productSelection: "SingleProduct" | "MultipleProducts";
 }
 
 export interface Recommendation {
